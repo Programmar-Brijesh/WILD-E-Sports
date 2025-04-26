@@ -1,0 +1,51 @@
+/* General styles for the navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        font-size: large; /* Adjust font size */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0; /* Remove margin between nav items */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: large; /* Adjust font size for links */
+        padding: 10px; /* Add padding for better touch targets */
+    }
+
+    .col-sm-2 {
+        text-align: center; /* Center align the images */
+        margin-bottom: 10px; /* Add some space below the images */
+    }
+
+    .col-sm-8 {
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    img {
+        width: 80px; /* Reduce image size for smaller screens */
+        height: 80px; /* Maintain aspect ratio */
+    }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: medium; /* Further reduce font size */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: medium; /* Further reduce font size for links */
+    }
+
+    img {
+        width: 60px; /* Further reduce image size */
+        height: 60px; /* Maintain aspect ratio */
+    }
+}
