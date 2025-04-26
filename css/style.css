@@ -1,51 +1,30 @@
-/* General styles for the navbar */
-.navbar {
-    padding: 10px 0;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .navbar-brand {
-        margin-left: 0; /* Remove left margin on smaller screens */
-        font-size: large; /* Adjust font size */
+@media (min-width: 460px) and (max-width: 480px) {
+    body {
+        background-color: #FFCC00; /* Replace this with your desired background color */
+        font-family: Arial, sans-serif;
     }
 
-    .navbar-nav .nav-item {
-        margin: 0; /* Remove margin between nav items */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
     }
 
-    .navbar-nav .nav-link {
-        font-size: large; /* Adjust font size for links */
-        padding: 10px; /* Add padding for better touch targets */
+    .logo {
+        max-width: 50px; /* Adjust the logo size */
+        max-height: 50px;
+        border-radius: 50%; /* Makes the logo circular, if applicable */
     }
 
-    .col-sm-2 {
-        text-align: center; /* Center align the images */
-        margin-bottom: 10px; /* Add some space below the images */
+    .nav-item {
+        font-size: 18px; /* Adjust font size for better readability */
+        color: #000; /* Change text color */
+        text-align: center;
     }
 
-    .col-sm-8 {
-        margin-top: 20px; /* Adjust top margin */
-    }
-
-    img {
-        width: 80px; /* Reduce image size for smaller screens */
-        height: 80px; /* Maintain aspect ratio */
-    }
-}
-
-/* Additional styles for very small screens */
-@media (max-width: 480px) {
-    .navbar-brand {
-        font-size: medium; /* Further reduce font size */
-    }
-
-    .navbar-nav .nav-link {
-        font-size: medium; /* Further reduce font size for links */
-    }
-
-    img {
-        width: 60px; /* Further reduce image size */
-        height: 60px; /* Maintain aspect ratio */
+    .menu-icon {
+        width: 30px; /* Adjust the size of the menu icon */
+        height: auto;
     }
 }
